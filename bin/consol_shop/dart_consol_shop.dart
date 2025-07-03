@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:async';
 
 void main() async {
+  print(Directory.current.path);
   //종료 전에 일정 시간 동안 대기하거나 카운트다운을 보여주고 싶다면 async , Dart의 Timer 또는 Future.delayed
   ShoppingMall mall = ShoppingMall();
   mall.printAction();  // 쇼핑몰 기능을 조회하는 메서드
