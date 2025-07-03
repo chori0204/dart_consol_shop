@@ -216,7 +216,7 @@ void main() {
   while (true) {
     stdout.write('캐릭터 이름을 입력하세요: ');
     final input = stdin.readLineSync(encoding: utf8)?.trim() ?? '';
-    final pattern = RegExp(r'^[가-힣ㄱ-ㅎㅏ-ㅣA-Za-z]+$').hasMatch(input);
+    final pattern = RegExp(r'^[가-힣A-Za-z]+$').hasMatch(input);
     //RegExp(r'^[가-힣ㄱ-ㅎㅏ-ㅣA-Za-z]+$') 
     //RegExp(r'^[가-힣A-Za-z]+$') --한글 자음 모음만 입력하는것을 막으려면
 
